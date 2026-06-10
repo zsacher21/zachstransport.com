@@ -1,10 +1,182 @@
+Great. Now click **Code → index.html → pencil/edit**, replace everything with this, then commit changes:
+
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Zach's Transport & Assembly</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zach's Transport & Assembly</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f8ef;
+      color: #1f2f25;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 22px 70px;
+      text-align: center;
+    }
+
+    img.logo {
+      max-width: 330px;
+      width: 80%;
+      height: auto;
+      margin: 25px auto 45px;
+      display: block;
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+
+    .intro {
+      font-size: 1.15rem;
+      max-width: 720px;
+      margin: 0 auto 35px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #e53935;
+      color: white;
+      text-decoration: none;
+      padding: 16px 28px;
+      border-radius: 10px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 12px 0 45px;
+    }
+
+    .section {
+      background: white;
+      border-radius: 18px;
+      padding: 30px;
+      margin: 24px auto;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      text-align: left;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .benefit h3 {
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+    }
+
+    .note {
+      font-size: 1.05rem;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    footer {
+      margin-top: 45px;
+      font-size: 0.9rem;
+      color: #5f6d64;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1.15rem;
+      }
+
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <main class="page">
+    <img class="logo" src="zachslogo.png.webp" alt="Zach's Transport & Assembly LLC logo" />
+
     <h1>Zach's Transport & Assembly</h1>
-    <p>Now powered by MOVE THAT COUCH!</p>
+    <div class="subtitle">New requests are now handled through MOVE THAT COUCH!</div>
+
+    <p class="intro">
+      For years, customers have booked furniture delivery, furniture assembly, TV mounting,
+      art hanging, shelf installation, and related services directly through Zach's Transport & Assembly.
+      To provide customers with more quote options and a simpler booking experience,
+      new service requests are now submitted through MOVE THAT COUCH!
+    </p>
+
+    <a class="button" href="https://www.movethatcouch.com" target="_blank" rel="noopener">
+      Get Quotes on MOVE THAT COUCH!
+    </a>
+
+    <section class="section">
+      <h2>Why the Change?</h2>
+
+      <div class="benefits">
+        <div class="benefit">
+          <h3>More Quotes, More Choices</h3>
+          <p>
+            Instead of requesting service from a single company, you can submit one request
+            and receive quotes from multiple independent providers in your area.
+          </p>
+        </div>
+
+        <div class="benefit">
+          <h3>A Simpler Booking Experience</h3>
+          <p>
+            Compare quotes, message providers, book service, pay deposits, and track progress
+            in one place.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Looking for Zach's Transport & Assembly?</h2>
+      <p class="note">
+        Zach's Transport & Assembly continues to provide delivery, assembly, and mounting
+        services throughout Central Texas. Requests submitted through MOVE THAT COUCH!
+        may be reviewed by Zach's Transport & Assembly when availability allows.
+      </p>
+    </section>
+
+    <a class="button" href="https://www.movethatcouch.com" target="_blank" rel="noopener">
+      Submit a Request
+    </a>
+
+    <footer>
+      © Zach's Transport & Assembly LLC
+    </footer>
+  </main>
 </body>
 </html>
+```
+
+After committing, wait about 30–60 seconds and refresh the live GitHub Pages URL.
