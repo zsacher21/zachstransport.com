@@ -21,12 +21,12 @@
     }
 
     img.logo {
-  max-width: 1000px;
-  width: 90%;
-  height: auto;
-  margin: 25px auto 45px;
-  display: block;
-}
+      max-width: 1000px;
+      width: 90%;
+      height: auto;
+      margin: 25px auto 45px;
+      display: block;
+    }
 
     h1 {
       font-size: 2.7rem;
@@ -153,18 +153,24 @@
     <section class="section">
       <h2>Looking for Zach's Transport & Assembly?</h2>
       <p class="note">
-        Zach's Transport & Assembly continues to provide services in the Austin area. Requests submitted through MOVE THAT COUCH!
-        may be reviewed by Zach's Transport & Assembly when availability allows.
+        Zach's Transport & Assembly continues to provide select services in the Austin area.
+        <strong>Use referral code ZACH when creating your MOVE THAT COUCH! account to connect with Zach's Transport & Assembly.</strong>
+        When posting a request, select <strong>Your Providers</strong> on the final review step to send your request to Zach's Transport & Assembly first, when the service and location are eligible.
+        If unavailable, you can still open the request to other qualified providers and compare quotes.
       </p>
     </section>
 
     <a class="button" href="https://www.movethatcouch.com" target="_blank" rel="noopener">
-      Submit a Request
+      Request Zach or Get Quotes
     </a>
 
     <footer>
-      © Zach's Transport & Assembly LLC
+      © <span id="current-year"></span> Zach's Transport & Assembly LLC
     </footer>
   </main>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
